@@ -107,7 +107,7 @@ class AnalyticsHandlers {
     }
     topUrls(urls) {
         // return urls.sort((a, b) => b.createdAt.localeCompare(a.createdAt))    
-        return urls.sort((a, b) => new Date(b.date) - new Date(a.date))
+        return urls.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     }
 }
 
